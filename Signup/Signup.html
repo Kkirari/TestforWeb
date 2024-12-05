@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
+    <link rel="stylesheet" href="Signup.css">
 </head>
 
 <body>
     <div class="wrapper">
-        <h1>Signup</h1>
+        <h1>SIGNUP</h1>
         <form>
             <div>
                 <input type="text" name="username " id="username" placeholder="User Name">
@@ -20,6 +21,26 @@
             <div>
                 <input type="password" name="password " id="password-input" placeholder="Password">
             </div>
+            <div>
+                <input type="password" name="confirm-password " id="cepeat-password-input"
+                    placeholder="Confirm Password">
+            </div>
+            <div>
+                <input type="text" name="name " id="name-input" placeholder="Name">
+            </div>
+            <div>
+                <input type="radio" id="male" name="gender" value="male" required> Male
+            </div>
+            <div>
+                <input type="radio" id="female" name="gender" value="female" required> Female
+            </div>
+            <div>
+                <input type="radio" id="other" name="gender" value="other" required> Other
+            </div>
+
+            <div>
+                <button type="submit">Signup</button>
+
         </form>
     </div>
 
