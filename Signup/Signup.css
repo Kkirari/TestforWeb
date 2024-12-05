@@ -67,9 +67,43 @@ form>div {
     justify-content: center;
 }
 
-form label {
+form label svg {
     flex-shrink: 0;
     height: 50px;
     width: 50px;
     background-color: var(--main-color);
+    fill: white;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+form input {
+    box-sizing: border-box;
+    flex-grow: 1;
+    min-width: 0;
+    height: 50px;
+    padding: 1em;
+    font: inherit;
+    border-radius: 0% 10px 10px 0;
+    border: none;
+    background-color: #ffb43c;
+    transition: 150ms ease;
+}
+
+form input:hover {
+    border: 2px solid var(--main-color);
+}
+
+#terms {
+    margin: 0%;
+    font-size: 20px;
+}
+
+#Logins {
+    margin: 0%;
+    font-size: 20px;
 }
