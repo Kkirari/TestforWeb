@@ -5,10 +5,11 @@ body {
 }
 
 :root {
-    --main-color: #da8600;
+    --main-color: #ff8c00;
     --base-color: #ffffff;
     --input-color: #ffffff;
-    --text-color: #d28100;
+    --text-color: #d26900;
+    --from-color: #ffd9ad;
 
 }
 
@@ -26,10 +27,21 @@ html {
 
 body {
     min-height: 100vh;
-    background-image: url(/Signup/img/bgthfood\,jpg.jpg);
+    background-image: url(/Signup/img/bgthaifood.jpeg);
     background-size: cover;
     background-position: right;
     overflow: hidden;
+}
+
+#terms {
+    margin: 0%;
+    font-size: 20px;
+    color: rgb(255, 166, 0);
+}
+
+#Logins {
+    margin: 0%;
+    font-size: 20px;
 }
 
 .wrapper {
@@ -67,12 +79,12 @@ form>div {
     justify-content: center;
 }
 
-form label svg {
+form label>svg {
     flex-shrink: 0;
     height: 50px;
     width: 50px;
     background-color: var(--main-color);
-    fill: white;
+    fill: rgb(255, 255, 255);
     border-radius: 10px 0 0 10px;
     display: flex;
     justify-content: center;
@@ -80,6 +92,8 @@ form label svg {
     font-size: 1.5rem;
     font-weight: 500;
 }
+
+
 
 form input {
     box-sizing: border-box;
@@ -89,21 +103,48 @@ form input {
     padding: 1em;
     font: inherit;
     border-radius: 0% 10px 10px 0;
-    border: none;
-    background-color: #ffb43c;
+    border: 2px solid var(--input-color);
+    border-left: none;
+    background-color: var(--from-color);
     transition: 150ms ease;
 }
 
 form input:hover {
-    border: 2px solid var(--main-color);
+    border-color: var(--main-color);
 }
 
-#terms {
-    margin: 0%;
-    font-size: 20px;
+form input :focus {
+    outline: none;
+    border-color: var(--text-color);
 }
 
-#Logins {
-    margin: 0%;
-    font-size: 20px;
+div:has(input:focus)>label>svg {
+    background-color: var(--text-color);
+}
+
+form input ::placeholder {
+    color: var(--text-color);
+}
+
+form button {
+    margin-top: 10px;
+    border: none;
+    border-radius: 1000px;
+    padding: 0.85em 4em;
+    background-color: var(--main-color);
+    color: var(--base-color);
+    font: inherit;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+form button:hover {
+    background-color: var(--text-color);
+}
+
+form button:focus {
+    outline: none;
+    background-color: var(--text-color);
 }
