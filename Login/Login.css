@@ -66,7 +66,7 @@ body {
     display: flex;
     justify-content: space-between;
     font-size: 14.5px;
-    margin: -20px 0 15px;
+    margin: -25px 0 15px;
 }
 
 .remember-forgot label input {
@@ -96,26 +96,28 @@ body {
     color: #333;
     font-weight: 600;
     margin: 10px 0;
+
 }
 
 .wrapper .Guest {
-    width: 100%;
-    height: 45px;
-    background: #fff;
-    border: none;
-    outline: none;
+    text-align: center;
+    border: 10px solid #fff;
     border-radius: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    cursor: pointer;
+    background: #fff;
     font-size: 16px;
     color: #333;
     font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
 }
 
 .Guest a {
     color: #333;
     text-decoration: none;
+    font-weight: 600;
 }
+
 
 
 .wrapper .register-link {
